@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+}
+
+.section {
+    padding: 0 70px 90px;
+}
+
+/*INTRODUCTION*/
+.introduction {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+
+}
+
+.introduction .navigation {
+    background-color: rgb(205, 205, 205);
+    height: 40px;
+    top: 20px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+}
+
+.introduction .navigation a {
+    color: white;
+    text-decoration: none;
+}
+
+.introduction .navigation .myName {
+    width: 25%;
+}
+
+.introduction .navigation .right-menus {
+    width: 70%;
+}
+
+/*BANNER*/
+
+.introduction .hi {
+    margin-top: 120px;
+}
+
+.introduction .tagline {
+    margin: 20px 0 170px;
+}
+
+.introduction .banner h1{
+    font-size: 300%;
+    padding: 20px 0px;
+}
+
+.banner {
+    padding: 70px;
+}
+
+
+
+/*SERVICE SECTION*/
+.service {
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service .about-me {
+    text-align: justify;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.service h2 {
+    padding: 60px 0px 40px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.service-cards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.abilities {
+    width: 30%;
+    background-color: rgb(222, 222, 222);
+    color: black;
+    padding: 25px 40px;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.abilities p {
+    text-align: justify;
+}
+
+.abilities h3 {
+    text-align: center;
+    padding: 10px;
+}
+
+.abilities ul {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.abilities ul li {
+    list-style-type: none;
+    padding: 6px 0;
+    margin: 10px 0;
+    background-color: rgb(60, 60, 60);
+    border-radius: 5px;
+    color: white;
+}
+
+
+/*PROJECTS*/
+.project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.project h2, .project .aProject {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.project h2 {
+    margin-bottom: 20px;
+}
+
+.project .aProject {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.project .overview {
+    width: 25%;
+}
+
+.project .overview img {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.project .big-scale {
+    width: 65%;
+}
+
+.project .big-scale img {
+    width: 100%;
+}
+
+.project .overview a {
+    text-decoration: none;
+    font-size: 130%;
+    font-weight: 900;
+    color: black;
+}
+
+.project .overview .project-description {
+    padding: 20px 0px;
+}
