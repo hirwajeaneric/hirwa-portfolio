@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Poppins', sans-serif; 
+    scroll-behavior: smooth;
+}
+
+.section {
+    padding: 0 70px 90px;
+}
+
+/*NAVIGATION*/
+/*Styling for the header section.*/
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.5s;
+}
+
+header.sticky{
+      background: #fff;
+      padding: 20px 100px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+header .logo{
+    color: #fff;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+header.sticky .logo{
+    color: #111;
+}
+
+header ul{
+    position: relative;
+    display: flex;
+}
+
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    display: inline-block;
+    margin: 0 15px;
+    color: #fff;
+    text-decoration: none;
+}
+
+header.sticky ul li a{
+    color: #111;
+}
+
+header.sticky #get-intouch {
+    color: white;
+    background-color: black;
+}
+
+header.sticky #get-intouch:hover {
+    color: black;
+    background-color: gray;
+}
+
+#get-intouch {
+    background-color: white;
+    color: black;
+    padding: 7px 15px;
+    border-radius: 30px;
+    margin: -7px 0 0 7px;
+}
+
+#get-intouch:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+/*INTRODUCTION*/
+.introduction {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    background-image: url("../Img/dark-wallpapers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: luminosity;
+
+}
+
+.introduction .navigation .myName {
+    width: 25%;
+}
+
+.introduction .navigation .right-menus {
+    width: 70%;
+}
+
+/*BANNER*/
+
+.introduction .hi {
+    margin-top: 180px;
+}
+
+.introduction .tagline {
+    margin: 20px 0 180px;
+}
+
+.introduction .banner h1{
+    font-size: 300%;
+    padding: 20px 0px;
+}
+
+.banner {
+    padding: 70px;
+}
+
+
+
+/*SERVICE SECTION*/
+.service {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service .about-me {
+    text-align: justify;
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 800px;
+}
+
+.service h1 {
+    padding: 80px 0px 60px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.service-cards {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.service-cards .theCards {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: top;
+    justify-content: center;    
+}
+
+.abilities {
+    width: 30%;
+    padding: 25px 40px;
+    border-radius: 20px;
+    margin: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.service-cards .theCards .designer {
+    background-image: url("../Img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.service-cards .theCards .developer {
+    background-image: url("../Img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.service-cards .theCards .author {
+    background-image: url("../Img/glenn-carstens-peters-P1qyEf1g0HU-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+.abilities p {
+    text-align: justify;
+}
+
+.abilities h3 {
+    text-align: center;
+    padding: 10px 0 30px;
+    font-weight: 900;
+    font-size: x-large;
+}
+
+.abilities ul {
+    padding: 20px 0;
+    text-align: center;
+}
+
+.abilities ul li {
+    list-style-type: none;
+    padding: 6px 0;
+    margin: 10px 0;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: rgb(0, 0, 0);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.abilities ul li:hover {
+    background-color: rgb(116, 116, 116);
+    color: white;
+}
+
+/*PROJECTS*/
+.project {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1300px;
+}
+
+.project, 
+.project .aProject, 
+.project .more {
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.project h2 {
+    margin: 20px auto 20px auto;
+}
+
+.project .aProject {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 40px 0;
+}
+
+.project .overview {
+    width: 25%;
+}
+
+.project .overview img {
+    width: 100%;
+    padding: 20px 0;
+}
+
+.project .big-scale {
+    width: 65%;
+}
+
+.project .big-scale img {
+    width: 100%;
+}
+
+.project .overview a {
+    text-decoration: none;
+    font-size: 130%;
+    font-weight: 900;
+    color: black;
+}
+
+.project .overview .project-description {
+    padding: 20px 0px;
+}
+
+.project .more {
+    padding: 20px 0;
+}
+
+.project .more a {
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    padding: 12px 18px;
+    border-radius: 20px;
+}
+
+.project .more a:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+/*STARTUP*/
+
+.startups {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1300px;   
+    margin: 0 auto 0 auto;
+}
+
+.startups h2 {
+    margin: 40px auto 20px auto;
+}
+
+.startups .intro {
+    max-width: 800px;
+    margin: 0 auto 0 auto;
+    text-align: center;
+    padding: 40px 0 60px 0;
+}
+
+.startups .startup-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.startups .startup-cards .aStartup {
+    border-radius: 20px;
+    width: 24%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+}
+
+.startup-cards .aStartup .description {
+    height: 90%;
+    padding: 20px;
+    background-image: url("../Img/V1vdDE.jpg");
+}
+
+.startup-cards .aStartup .description h3 {
+    padding: 10px 0 20px;
+    text-align: center;
+}
+
+.startup-cards .aStartup .project-desc {
+    color: white;
+}
+
+.startup-cards .aStartup #status {
+    height: 10%;
+    background-color: gray;
+    border-radius: 0 0 20px 20px;
+    background-size: cover;
+}
+
+.startup-cards .aStartup #inDevelopment-notice {
+    padding: 5px 0;
+    text-align: center;
+    font-weight: 600;
+    font-style: italic;
+    font-size: 80%;
+    min-height: 150px;
+}
+
+
+
+/*TESTIMONIALS*/
+
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-width: 1300px;   
+    margin: 0 auto 40px auto;
+}
+
+.testimonials h2 {
+    margin: 40px auto 100px auto;
+}
+
+.testimonials .testimonial-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonials .testimonial-cards .aTestimonial {
+    border-radius: 20px;
+    width: 30%;
+    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    */
+    border-top: 5px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.testimonials .testimonial-cards .aTestimonial .image img,
+.testimonials .testimonial-cards .aTestimonial .image {
+    width: 100px;
+    margin: 0 auto;
+    border-radius: 50px;   
+}
+
+.testimonials .testimonial-cards .aTestimonial .image img {
+    border: 5px solid black;
+}
+
+.testimonials .testimonial-cards .aTestimonial .image,
+.testimonials .testimonial-cards .aTestimonial .testimony,
+.testimonials .testimonial-cards .aTestimonial .nameAndPosition {
+    margin-top: -80px;
+}
+
+.testimonials .testimonial-cards .aTestimonial {
+    padding: 30px;
+    min-height: 300px;
+    background: linear-gradient(to bottom, rgb(200, 200, 200) 0%, white 100%);
+}
+
+.testimonials .testimonial-cards .aTestimonial .testimony {
+    text-align: center;
+}
+
+.testimonials .testimonial-cards .aTestimonial .nameAndPosition {
+    text-align: center;
+}
+
+.testimonials .testimonial-cards .aTestimonial .name {
+    font-weight: 600;
+    font-size: 110%;
+}
+
+.testimonials .testimonial-cards .aTestimonial .position {
+    font-size: 80%;
+    margin: 10px 0 0 0;
+}
+
+
+/*CALL TO ACTION*/
+
+.callToAction {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0 auto 0 auto;
+    background-color: black;
+    background-image: url("../Img/dark-wallpapers.jpg");
+    color: white;
+    justify-content: space-around;
+}
+
+.callToAction h3 {
+    margin: 80px auto 60px auto;
+    font-weight: 900;
+}
+
+.callToAction .callMessage {
+    text-align: center;
+}
+
+.callToAction a {
+    margin: 40px auto 80px auto;
+    padding: 18px 30px;
+    background-color: white;
+    border-radius: 30px;
+    text-decoration: none;
+    color: black;
+    font-weight: 800;
+}
+
+.callToAction a:hover {
+    background-color: gray;
+    color: white;
+}
+
+
+
+/*FOOTER*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 80px auto 0 auto;
+}
+
+footer .footer-part {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 auto 0 auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 100px;
+}
+
+footer .footer-part blockquote {
+    padding: 40px 0;
+    max-width: 400px;
+    text-align: center;
+    font-size: 90%;
+}
+
+footer .footer-part .social-medias a {
+    text-decoration: none;
+    margin: 20px;
+}
+
+footer .copyright {
+    margin: 100px 0 0 0;
+    background-color: black;
+    padding: 20px;    
+}
+
+footer .copyright p {
+    text-align: center;
+    color: white;
+}
+
+
+/*Responsiveness*/
+@media (max-width: 991px) {
+    header,
+    header.sticky{
+      padding: 20px 50px;
+      z-index: 1000;
+    }
+    .menu{ /*Thess stylings imply that as we reach 991, the menu will become vertical*/
+      position: fixed;
+      top: 75px;
+      left: -100%;
+      display: block;
+      padding: 50px 50px;
+      text-align: center;
+      width: 100%;
+      height: 100vh;
+      background: #fff;
+      transition: 0.5s;
+      z-index: 999;
+      border-top: 1px solid rgba(0,0,0,0.2);
+    }
+    .menu.active{
+      left: 0;
+    }
+    header ul li a {
+      color: #111;
+      font-size: 24px;
+      margin: 10px;
+    }
+    .toggle{
+      width: 40px;
+      height: 40px;
+      background: url("../Img/menu.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 30px;
+      cursor: pointer;
+    }
+    /*This is what happens when we click on the toggle button.
+    Buttons are exchanged*/
+    .toggle.active{
+      background: url("../Img/menu-clicked.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 25px;
+      cursor: pointer;
+    }
+
+
+}
