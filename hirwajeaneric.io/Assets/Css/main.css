@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+/*General Styles*/
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -11,7 +14,7 @@
 }
 
 /*NAVIGATION*/
-/*Styling for the header section.*/
+/*Styling for the header section (Navigation bar) .*/
 header{
     position: fixed;
     top: 0;
@@ -90,7 +93,7 @@ header.sticky #get-intouch:hover {
 }
 
 
-/*INTRODUCTION*/
+/*INTRODUCTION - Banner*/
 .introduction {
     background-color: black;
     color: white;
@@ -105,33 +108,26 @@ header.sticky #get-intouch:hover {
 
 }
 
-.introduction .navigation .myName {
-    width: 25%;
-}
-
-.introduction .navigation .right-menus {
-    width: 70%;
-}
-
-/*BANNER*/
-
 .introduction .hi {
     margin-top: 180px;
+    font-size: 200%;
+    font-weight: 600;
 }
 
 .introduction .tagline {
     margin: 20px 0 180px;
+    font-size: 200%;
+    font-weight: 600;
 }
 
 .introduction .banner h1{
-    font-size: 300%;
+    font-size: 400%;
     padding: 20px 0px;
 }
 
 .banner {
     padding: 70px;
 }
-
 
 
 /*SERVICE SECTION*/
@@ -230,6 +226,7 @@ header.sticky #get-intouch:hover {
     color: white;
 }
 
+
 /*PROJECTS*/
 .project {
     display: flex;
@@ -281,6 +278,15 @@ header.sticky #get-intouch:hover {
     color: black;
 }
 
+.project .overview .typeOfProject {
+    background-color: gray;
+    padding: 3px 20px;
+    color: white;
+    border-radius: 0 40px 40px 0;
+    width: 80px;
+    font-size: 80%;
+}
+
 .project .overview .project-description {
     padding: 20px 0px;
 }
@@ -304,7 +310,6 @@ header.sticky #get-intouch:hover {
 
 
 /*STARTUP*/
-
 .startups {
     display: flex;
     flex-direction: column;
@@ -335,7 +340,6 @@ header.sticky #get-intouch:hover {
     border-radius: 20px;
     width: 24%;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-
 }
 
 .startup-cards .aStartup .description {
@@ -372,7 +376,6 @@ header.sticky #get-intouch:hover {
 
 
 /*TESTIMONIALS*/
-
 .testimonials {
     display: flex;
     flex-direction: column;
@@ -395,8 +398,8 @@ header.sticky #get-intouch:hover {
 .testimonials .testimonial-cards .aTestimonial {
     border-radius: 20px;
     width: 30%;
-    /*box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    */
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    
     border-top: 5px solid black;
     display: flex;
     flex-direction: column;
@@ -448,7 +451,6 @@ header.sticky #get-intouch:hover {
 
 
 /*CALL TO ACTION*/
-
 .callToAction {
     display: flex;
     flex-direction: column;
@@ -456,6 +458,8 @@ header.sticky #get-intouch:hover {
     margin: 0 auto 0 auto;
     background-color: black;
     background-image: url("../Img/dark-wallpapers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     color: white;
     justify-content: space-around;
 }
@@ -467,6 +471,7 @@ header.sticky #get-intouch:hover {
 
 .callToAction .callMessage {
     text-align: center;
+    margin: 0 auto 0 auto;    
 }
 
 .callToAction a {
@@ -487,7 +492,6 @@ header.sticky #get-intouch:hover {
 
 
 /*FOOTER*/
-
 footer {
     display: flex;
     flex-direction: column;
@@ -517,7 +521,8 @@ footer .footer-part blockquote {
 
 footer .footer-part .social-medias a {
     text-decoration: none;
-    margin: 20px;
+    padding: 0px 18px;
+    cursor: pointer;
 }
 
 footer .copyright {
@@ -532,7 +537,9 @@ footer .copyright p {
 }
 
 
-/*Responsiveness*/
+
+
+/*RESPONSIVENESS*/
 @media (max-width: 991px) {
     header,
     header.sticky{
@@ -548,7 +555,7 @@ footer .copyright p {
       text-align: center;
       width: 100%;
       height: 100vh;
-      background: #fff;
+      background: rgb(255, 255, 255);
       transition: 0.5s;
       z-index: 999;
       border-top: 1px solid rgba(0,0,0,0.2);
@@ -559,7 +566,7 @@ footer .copyright p {
     header ul li a {
       color: #111;
       font-size: 24px;
-      margin: 10px;
+      margin: 20px;
     }
     .toggle{
       width: 40px;
@@ -580,5 +587,417 @@ footer .copyright p {
       cursor: pointer;
     }
 
+    header.sticky .toggle,
+    header.sticky .toggle.active {
+        /*background-blend-mode: color-burn;*/
+        padding: 20px;
+        background-color: black;
+        border-radius: 7px;
+    }
 
+    /*ALL SECTIONS - Reducing the padding*/
+    .section {
+        padding: 0 40px 60px;
+    }
+
+
+    /*INTRODUCTION SECTION*/
+    .introduction .tagline {
+        font-size: 150%;
+        font-weight: 500;
+    }
+    
+    .introduction .banner h1{
+        font-size: 300%;
+    }
+    
+    .banner {
+        padding: 40px;
+    }
+
+    /*SERVICES*/
+    /*About me text*/
+    .service .about-me {
+        padding-top: 90px;
+        width: 80%;
+    }
+
+    .service h1 {
+        padding: 60px 0px 50px;
+    }
+    
+    .abilities {
+        padding: 15px 20px;
+        margin: 8px;
+    }
+     
+    .abilities h3 {
+        padding: 10px 0 20px;
+        font-weight: 700;
+    }
+
+    .abilities p {
+        text-align: justify;
+        font-size: 90%;
+    }
+    
+    .abilities ul {
+        padding: 10px 0;
+        font-size: 90%;
+    }
+    
+    
+    /*PROJECTS*/    
+    .project .aProject {
+        padding: 30px 0;
+    }
+    
+    .project .overview {
+        width: 20%;
+    }
+    
+    .project .overview img {
+        padding: 10px 0;
+    }
+    
+    .project .big-scale {
+        width: 70%;
+    }
+        
+    .project .overview a {
+        font-size: 110%;
+        font-weight: 700;
+    }
+    
+    .project .overview .typeOfProject {
+        padding: 3px 10px;
+        width: 70px;
+        font-size: 70%;
+    }
+    
+    .project .overview .project-description {
+        padding: 10px 0px;
+        font-size: 90%;
+    }
+
+    
+    /*STARTUP*/
+    .startups h2 {
+        margin: 30px auto 10px auto;
+    }
+    
+    .startups .intro {
+        max-width: 800px;
+        width: 80%;
+        padding: 30px 0 50px 0;
+    }
+
+    .startup-cards .aStartup .description h3 {
+        padding: 0 0 20px;
+        font-size: 110%;
+    }
+    
+    .startup-cards .aStartup .description {
+        height: 90%;
+        padding: 15px;
+    }
+    
+    .startup-cards .aStartup .project-desc {
+        font-size: 90%;
+    }
+        
+    .startup-cards .aStartup #inDevelopment-notice {
+        font-size: 70%;
+    }
+    
+    
+    /*TESTIMONIALS*/
+    .testimonials h2 {
+        margin: 40px auto 90px auto;
+    }
+    
+    .testimonials .testimonial-cards .aTestimonial .testimony {
+        font-size: 90%;
+    }
+    
+    .testimonials .testimonial-cards .aTestimonial .nameAndPosition {
+        font-size: 90%;
+    }
+
+    
+    /*CALL TO ACTION*/
+    .callToAction h3 {
+        margin: 60px auto 60px auto;
+        font-weight: 900;
+    }
+
+    .callToAction a {
+        margin: 40px auto 60px auto;
+        padding: 12px 20px;
+    }
+    
+    /*FOOTER*/
+    footer {
+        margin: 60px auto 0 auto;
+    }
+    
+    footer .copyright {
+        margin: 80px 0 0 0;
+    }
 }
+
+
+@media (max-width: 799px) {
+    /*ALL SECTIONS - Reducing the padding*/
+    .section {
+        padding: 0 30px 60px;
+    }
+
+    /*SERVICES*/
+    /*About me text*/
+    .service .about-me {
+        padding-top: 60px;
+        width: 90%;
+    }
+
+    .service h1 {
+        padding: 50px 0px 40px;
+        font-size: 160%;
+        text-align: center;
+    }
+    
+    .abilities {
+        padding: 15px 20px;
+        width: 45%;
+    }
+     
+    
+    /*PROJECTS*/    
+    .project .aProject {
+        padding: 20px 0 40px;
+    }
+    
+    .project .overview {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+    
+    .project .overview img {
+        width: 90%;
+    }
+
+    .project .overview .part1 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }    
+
+    .project .overview .part1 a {
+        width: 100%;
+        font-size: 130%;
+        margin: 10px 0 30px;
+    }
+
+    .project .overview .project-description {
+        width: 100%;
+        padding: 30px;
+        font-size: 90%;
+    }
+    
+    .project .big-scale {
+        width: 100%;
+    }
+        
+    .project .overview a {
+        font-size: 110%;
+        font-weight: 700;
+    }
+
+    .startups .startup-cards .aStartup {
+        border-radius: 20px;
+        width: 47%;
+        margin: 7px;
+    }
+    
+    
+    /*TESTIMONIALS*/
+    .testimonials {
+        margin: 0 auto 0 auto;
+    }
+
+    .testimonials h2 {
+        margin: 40px auto 90px auto;
+    }
+ 
+    .testimonials .testimonial-cards .aTestimonial {
+        width: 47%;
+        margin: 0 0 80px;
+    }
+    
+    .testimonials .testimonial-cards .aTestimonial .testimony {
+        font-size: 90%;
+    }
+    
+    .testimonials .testimonial-cards .aTestimonial .nameAndPosition {
+        font-size: 90%;
+    }
+
+    
+    /*CALL TO ACTION*/
+    .callToAction h3 {
+        margin: 60px auto 60px auto;
+        font-weight: 900;
+    }
+
+    .callToAction a {
+        margin: 40px auto 60px auto;
+        padding: 12px 20px;
+    }
+    
+    /*FOOTER*/
+    footer {
+        margin: 60px auto 0 auto;
+    }
+    
+    footer .copyright {
+        margin: 80px 0 0 0;
+    }
+}
+
+
+@media (max-width: 600px) {
+    header,
+    header.sticky{
+      padding: 10px 27px;
+      z-index: 1000;
+    }
+
+    .menu{ /*Thess stylings imply that as we reach 991, the menu will become vertical*/
+        position: fixed;
+        top: 60px;
+        left: -100%;
+        display: block;
+        padding: 50px 50px;
+        text-align: center;
+        width: 100%;
+        height: 100vh;
+        background: rgb(255, 255, 255);
+        transition: 0.5s;
+        z-index: 999;
+        border-top: 1px solid rgba(0,0,0,0.2);
+    }    
+
+    header .logo {
+        font-size: 100%;
+    }
+
+    /*ALL SECTIONS - Reducing the padding*/
+    .section {
+        padding: 0 30px 40px;
+    }
+
+    /*SERVICES*/
+    /*About me text*/
+    .service .about-me {
+        padding-top: 60px;
+        width: 90%;
+    }
+    
+    .abilities {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+     
+    
+    /*PROJECTS*/    
+    .project .overview .part1 a {
+        font-size: 110%;
+    }
+
+    .project .overview .project-description {
+        width: 100%;
+        padding: 20px;
+        font-size: 90%;
+    }
+        
+    .project .overview a {
+        font-size: 110%;
+        font-weight: 700;
+    }
+    
+
+    /*STARTUP*/
+    
+    .startups h2 {
+        margin: 30px auto 0 auto;
+    }
+    
+    .startups .intro {
+        max-width: 800px;
+        width: 90%;
+        padding: 30px 0 40px 0;
+    }
+
+    .startups .startup-cards .aStartup {
+        border-radius: 20px;
+        width: 100%;
+        margin: 0 0 20px;
+
+    }
+
+    .startup-cards .aStartup .description h3 {
+        padding: 20px 0 0;
+        font-size: 110%;
+    }
+
+    .startup-cards .aStartup .project-desc {
+        font-size: 90%;
+        padding: 20px;
+    }
+        
+    .startup-cards .aStartup #inDevelopment-notice {
+        font-size: 70%;
+    }
+    */
+    
+    
+    /*TESTIMONIALS*/
+    .testimonials h2 {
+        margin: 40px auto 70px auto;
+    }
+ 
+    .testimonials .testimonial-cards .aTestimonial {
+        width: 100%;
+        margin: 0 0 80px;
+    }
+
+    .callToAction .callMessage {
+        width: 80%;
+        text-align: center;
+    }
+
+    /*FOOTER*/
+    footer img {
+        width: 200px;
+    }
+
+    footer .footer-part blockquote {
+        padding: 40px 0;
+        width: 80%;
+    }
+    
+    footer .copyright {
+        margin: 60px 0 0 0;
+    }
+    
+    footer .copyright p {
+        text-align: center;
+        color: white;
+        font-size: 80%;
+    }
+
+
+  }
+  
