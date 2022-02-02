@@ -1,23 +1,22 @@
-* {
-    margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-}
-
-body {
-    background-color: white;
-}
-
-/*MENU HEADER*/
+/*PORTFOLIO STYLES*/
+/*These styles belong to the portfolio page.*/
+.project h2 {
+    padding: 100px 0 0 0;
+} 
 
 
-/*GALLERY*/
+
+/*SERVICES*/
 
 
-/*FINAL-PART*/
 
-@media (max-width: 1050px){
+/*CONTACT*/
 
-}
+
+
+/*BLOG*/
+
+
 
 @media (max-width: 991px){
 

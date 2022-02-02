@@ -750,7 +750,7 @@ footer .copyright p {
 @media (max-width: 799px) {
     /*ALL SECTIONS - Reducing the padding*/
     .section {
-        padding: 0 30px 60px;
+        padding: 0 5 0px 60px;
     }
 
     /*SERVICES*/
