@@ -1,6 +1,10 @@
 
 /*BLOG STYLES*/
 /*These styles belong to the style page.*/
+* {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
 
 header {
     background-color: black;
@@ -9,10 +13,7 @@ header {
 
 .callToAction {
     margin: 65px auto 0 auto;
-    background-image: url("../Assets/Img/dark-wallpapers.jpg");
-    background-blend-mode: luminosity;
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: linear-gradient(to bottom, #003366 0%, #66ff99 100%);
     color: white;
     justify-content: space-around;
 }
@@ -23,27 +24,6 @@ header {
     text-align: center;
 }
 
-/*
-.callToAction .callMessage {
-    text-align: center;
-    margin: 0 auto 0 auto;    
-}
-
-.callToAction a {
-    margin: 40px auto 80px auto;
-    padding: 18px 30px;
-    background-color: white;
-    border-radius: 30px;
-    text-decoration: none;
-    color: black;
-    font-weight: 800;
-}
-
-.callToAction a:hover {
-    background-color: gray;
-    color: white;
-}
-*/
 
 /*
 @media (max-width: 991px){

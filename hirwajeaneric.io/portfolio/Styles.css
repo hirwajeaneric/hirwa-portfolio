@@ -1,6 +1,10 @@
 
 /*PORTFOLIO STYLES*/
 /*These styles belong to the portfolio page.*/
+* {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
 
 header {
     background-color: black;
