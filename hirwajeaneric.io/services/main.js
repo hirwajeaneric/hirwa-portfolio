@@ -31,6 +31,7 @@ function setImageForPhones() {
         let idToGiveTheClass6 = document.getElementById('img6');      
         idToGiveTheClass6.setAttribute("class", "forPhones");
     } else {
+        console.log("The size of the window is by now: "+sizeOfTheWindow);
         console.log("Wait until we have the size of phones bro!");
     }
 }

@@ -1,4 +1,9 @@
 /*SERVICES STYLES*/
+* {
+    scroll-behavior: smooth;
+    transition: 0.5s;
+}
+
 header {
     background-color: black;
     padding: 20px 90px;
@@ -13,6 +18,8 @@ header {
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
+    max-width: 1300px;
+    margin: 0 auto;
 }
 
 .services h1 {
@@ -29,6 +36,13 @@ header {
     margin: 0 0 30px 0;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.services .aService:hover {
+    background-color: rgb(192, 233, 255);
+    margin: 0 0 30px 0;
+    transform: scale(1.1);
+    transition: 0.3;
 }
 
 .services .aService .leftside-content {
@@ -59,8 +73,9 @@ header {
 
 .services .aService .rightside-content .hireMeButton:hover {
     color: white;
-    background-color: rgb(101, 101, 101);
+    background-color: #003e7b;
     border-radius: 10px;
+    transform: scale(1.1);
 }
 
 
